@@ -46,7 +46,7 @@
         legendCanvas.width = 100;
         legendCanvas.height = 10;
 
-        var legendCtx = legendCanvas.getContext('2d');
+        var legendCtx = legendCanvas.getContext('2d', { willReadFrequently: true });
         var gradientCfg = {};
 
         function updateLegend(data) {

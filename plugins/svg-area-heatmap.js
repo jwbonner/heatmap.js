@@ -13,7 +13,7 @@
     var _getColorPalette = function(config) {
       var gradientConfig = config.gradient || config.defaultGradient;
       var paletteCanvas = document.createElement('canvas');
-      var paletteCtx = paletteCanvas.getContext('2d');
+      var paletteCtx = paletteCanvas.getContext('2d', { willReadFrequently: true });
 
       paletteCanvas.width = 256;
       paletteCanvas.height = 1;
